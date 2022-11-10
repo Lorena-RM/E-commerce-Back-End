@@ -11,6 +11,7 @@ E-commerce Back End 🛍</a>
 - [Description](#description)
 
 - [Installation](#installation)
+- [Database Models](#database-models)
 - [Usage](#usage)
 - [Resources](#resources)
 - [Questions](#questions)
@@ -47,8 +48,6 @@ THEN I am able to successfully create, update, and delete data in my database
 ```
 
 ## [Installation](#table-of-contents)
-
-## [Installation](#table-of-contents)
 This application requires that you download the following packages using Node to run this application:
 
 <p align="center">
@@ -56,11 +55,13 @@ This application requires that you download the following packages using Node to
 <p align="center">
 <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"> 
 <p align="center">
-<img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white">
+<img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white">
 <p align="center">
 <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge">
 <p align="center">
-<img src= "https://img.shields.io/badge/npm-Mongoose-npm?style=for-the-badge&logo=npm&logoColor=white">
+<img src= "https://img.shields.io/badge/sequelize-323330?style=for-the-badge&logo=sequelize&logoColor=blue">
+<p align="center">
+<img src= "https://img.shields.io/badge/npm-dotenv-npm?style=for-the-badge&logo=npm&logoColor=blue">
 </p>
 
 The NPM packages are on the package.json for you to simply run this command in your terminal to install the npm pakages needed:
@@ -68,3 +69,147 @@ The NPM packages are on the package.json for you to simply run this command in y
 ```
 npm i
 ```
+once I have done that in order to run the application with Data already in the application i must first create my database and seed it with the sql files inside the DB folder
+
+Below is a short GIF to help you understand exact steps for installation for a smooth application run:
+
+![installationGIF](./assets/installation.gif)
+
+once sql files have been sourced in MYSQL, and the seeds have been ran through npm, run the following command in your terminal
+
+```
+npm start
+```
+> Refer to the GIF above for visual instruction
+
+## [Database Models](#table-of-contents)
+
+* `Category`
+
+  * `id`
+
+    * Integer.
+  
+    * Doesn't allow null values.
+  
+    * Set as primary key.
+  
+    * Uses auto increment.
+
+  * `category_name`
+  
+    * String.
+  
+    * Doesn't allow null values.
+
+* `Product`
+
+  * `id`
+  
+    * Integer.
+  
+    * Doesn't allow null values.
+  
+    * Set as primary key.
+  
+    * Uses auto increment.
+
+  * `product_name`
+  
+    * String.
+  
+    * Doesn't allow null values.
+
+  * `price`
+  
+    * Decimal.
+  
+    * Doesn't allow null values.
+  
+    * Validates that the value is a decimal.
+
+  * `stock`
+  
+    * Integer.
+  
+    * Doesn't allow null values.
+  
+    * Set a default value of `10`.
+  
+    * Validates that the value is numeric.
+
+  * `category_id`
+  
+    * Integer.
+  
+    * References the `Category` model's `id`.
+
+* `Tag`
+
+  * `id`
+  
+    * Integer.
+  
+    * Doesn't allow null values.
+  
+    * Set as primary key.
+  
+    * Uses auto increment.
+
+  * `tag_name`
+  
+    * String.
+
+* `ProductTag`
+
+  * `id`
+
+    * Integer.
+
+    * Doesn't allow null values.
+
+    * Set as primary key.
+
+    * Uses auto increment.
+
+  * `product_id`
+
+    * Integer.
+
+    * References the `Product` model's `id`.
+
+  * `tag_id`
+
+    * Integer.
+
+    * References the `Tag` model's `id`.
+
+## [Usage](#table-of-contents)
+
+The following animation shows the application's GET routes to return all categories, all products, and all tags being tested in Thunder Client:
+
+![catcrud](./assets/categories/categoryCRUD.gif)
+
+The following animation shows the application's GET routes to return a single category, a single product, and a single tag being tested in Thunder Client:
+
+The following animation shows the application's POST routes to create a category, a product, and a tag being tested in Thunder Client:
+
+The following animation shows the application's PUT routes to UPDATE a single category, a single product, and a single tag being tested in Thunder Client:
+
+The following animation shows the application's DELETE routes to delete a single category, a single product, and a single tag being tested in Thunder Client:
+
+## [Resources](#table-of-contents)
+
+
+
+## [Questions](#table-of-contents)
+
+Take a look at some other work ive done on my repos from my Github:
+
+* Github: [Lorena-RM](https://github.com/Lorena-RM)
+
+Get in contact with me Directly within linkden or my personal email:
+
+* Linkden: [Lorena Morales](https://www.linkedin.com/in/lorena-morales-496855240/)
+
+* Email: [lorenarm.999@gmail.com](mailto:lorenarm.999@gmail.com)
