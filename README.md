@@ -186,17 +186,17 @@ npm start
 
 ## [Usage](#table-of-contents)
 
-The following animation shows the application's GET routes to return all categories, all products, and all tags being tested in Thunder Client:
+The following animation shows the application's **Category CRUD** routes tested in Thunder Client:
 
-![catcrud](./assets/categories/categoryCRUD.gif)
+![categoryCRUD](./assets/categories/categoryCRUD.gif)
 
-The following animation shows the application's GET routes to return a single category, a single product, and a single tag being tested in Thunder Client:
+The following animation shows the application's **Product CRUD** routes tested in Thunder Client:
 
-The following animation shows the application's POST routes to create a category, a product, and a tag being tested in Thunder Client:
+![productCRUDGIF](./assets/products/productCRUD.gif)
 
-The following animation shows the application's PUT routes to UPDATE a single category, a single product, and a single tag being tested in Thunder Client:
+The following animation shows the application's **Tag CRUD** routes tested in Thunder Client:
 
-The following animation shows the application's DELETE routes to delete a single category, a single product, and a single tag being tested in Thunder Client:
+![tagsCRUDGIF](./assets/tags/tagCRUD.gif)
 
 ## [Resources](#table-of-contents)
 
