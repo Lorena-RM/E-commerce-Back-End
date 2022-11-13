@@ -1,10 +1,10 @@
-<h1 align="center"> <a href="https://youtu.be/Ndu4JQRXCAM">
+<h1 align="center"> <a href="https://youtu.be/6hiiLjYo2zg">
 E-commerce Back End 🛍</a>
 </h1>
 
 <p align="center">This Project has no front end but cooperates and functions with MySQL and Sequelize.</p>
 
-<p align="center"> For a Detailed Video Walkthrough you can follow the link in the Title of this one -> <a href= "https://youtu.be/Ndu4JQRXCAM">Video Walkthrough</a></p>
+<p align="center"> For a Detailed Video Walkthrough you can follow the link in the Title of this one -> <a href= "https://youtu.be/6hiiLjYo2zg">Video Walkthrough</a></p>
 
 ## Table of Contents
 
@@ -200,7 +200,11 @@ The following animation shows the application's **Tag CRUD** routes tested in Th
 
 ## [Resources](#table-of-contents)
 
+Using the My Sql DB application is a great resource for viewing models if a visual aspect of your models gives you a better prespective on how all the models end up connecting.
 
+Below is an example of the models created using E-commerce back end models: 
+
+![mysqlDB](./assets/Screen%20Shot%202022-11-09%20at%209.56.15%20PM.png)
 
 ## [Questions](#table-of-contents)
 
